@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/title_search"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#f0f0ef"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/title_search_icon"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/i_search" />
+
+        <TextView
+            android:id="@+id/title_search_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:text="搜菜谱、食材"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/home_header_one"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/home_header_one"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="本周流行食谱"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_header_two"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/home_header_two"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="热门排行"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toRightOf="@+id/home_header_one"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/index_viewpager"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+        android:id="@+id/caidan_tb1"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+            android:background="#fcfcfc"
+        android:text="家常菜"
+        android:gravity="center"
+        />
+        <View
+            android:layout_width="1sp"
+            android:layout_height="50dp"
+            android:background="#DCDCDC" />
+        <Button
+            android:id="@+id/caidan_tb2"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fcfcfc"
+            android:text="川菜"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1sp"
+            android:layout_height="50dp"
+            android:background="#DCDCDC" />
+        <Button
+            android:id="@+id/caidan_tb3"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fcfcfc"
+            android:text="早餐"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1sp"
+            android:layout_height="50dp"
+            android:background="#DCDCDC" />
+        <Button
+            android:id="@+id/caidan_tb4"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="素菜"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            />
+        </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/caidan_tb5"
+            android:layout_height="50dp"
+            android:background="#fcfcfc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="煲汤"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1sp"
+            android:layout_height="50dp"
+            android:background="#DCDCDC" />
+        <Button
+            android:id="@+id/caidan_tb6"
+            android:layout_height="50dp"
+            android:background="#fcfcfc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="下饭菜"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1sp"
+            android:layout_height="50dp"
+            android:background="#DCDCDC" />
+        <Button
+            android:id="@+id/caidan_tb7"
+            android:layout_height="50dp"
+            android:background="#fcfcfc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="烘焙"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1sp"
+            android:layout_height="50dp"
+            android:background="#DCDCDC" />
+        <Button
+            android:id="@+id/caidan_tb8"
+            android:layout_height="50dp"
+            android:background="#fcfcfc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="更多"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#DCDCDC" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/cr" />
+
+
+</LinearLayout>

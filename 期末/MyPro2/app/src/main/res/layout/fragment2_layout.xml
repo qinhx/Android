@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/bc"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/class_title_radios"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/class_title_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/darker_gray"
+                android:button="@null"
+                android:text="分类"
+                android:textColor="@drawable/rb_color_selector"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/class_title_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:button="@null"
+                android:text="食材"
+                android:textColor="@drawable/rb_color_selector"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@mipmap/bc">
+
+        <LinearLayout
+            android:id="@+id/title_search"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#f0f0ef"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/title_search_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/i_search" />
+
+            <TextView
+                android:id="@+id/title_search_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:text="搜菜谱、食材"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/zhonglei_listview"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/listview_bg"
+            android:divider="@null"
+
+            android:scrollbars="none" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/fenlei_gridview11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/shicai_listview"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/listview_bg"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/shicai_gridview11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</LinearLayout>

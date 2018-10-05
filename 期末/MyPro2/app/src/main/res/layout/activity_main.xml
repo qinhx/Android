@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="0dp"
+        android:background="@color/div_white" />
+
+    <RadioGroup
+        android:id="@+id/rg_menu_radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_menu_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_index"
+            style="@style/radioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_home_selector"
+            android:text="首页"
+            android:textColor="@drawable/rb_color_selector"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rb_class"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/rb_class_selector"
+            android:text="分类"
+            android:textColor="@drawable/rb_color_selector"
+            android:textSize="8sp" />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/rb_more_selector"
+            android:text="更多"
+            android:textColor="@drawable/rb_color_selector"
+            android:textSize="8sp" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp">
+
+    <EditText
+        android:id="@+id/Agift"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Abirth"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/Abirth"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Abirth"
+        android:layout_marginEnd="29dp"
+        android:layout_toStartOf="@+id/Abirth"
+        android:gravity="center"
+        android:text="生日"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/Agift"
+        android:gravity="center"
+        android:text="礼物"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/Anum"
+        android:layout_alignBottom="@+id/Anum"
+        android:layout_alignEnd="@+id/textView3"
+        android:text="电话"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Anum"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Agift"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Anum"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/get"
+        android:background="@android:color/transparent"
+        android:text="放弃修改"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Aname"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:gravity="center"
+        android:text="姓名"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/Alname"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Aname"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="今晚大吉大利我们吃鸡"
+        android:textColor="@android:color/holo_red_light" />
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Anum"
+        android:background="@android:color/transparent"
+        android:text="确认修改" />
+</RelativeLayout>
